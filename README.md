@@ -135,24 +135,24 @@ A speech-to-text (STT) and text-to-speech (TTS) powered chatbot using:
 ---
 ]
 
-🔧 SSL Certificate Generation Steps
+#*🔧 SSL Certificate Generation Steps*
 
 If you want to run your project using HTTPS locally, you can generate self-signed certificates using the following steps:
 
 Step 1: Navigate to the Certificate Directory
-
+```javascript
 cd frontend/certs
-
+```
 Step 2: Generate SSL Certificates Using OpenSSL
-
+```javascript
 openssl req -x509 -newkey rsa:4096 -keyout key.pem -out cert.pem -days 365 -nodes
-
+```
 During this step, you will be prompted to enter some details like country, state, organization name, etc. You can skip these by pressing Enter.
 
 Step 3: Use Certificates in Uvicorn Command
-
+```javascript
 uvicorn main:app --host 0.0.0.0 --port 9900 --reload --ssl-keyfile=frontend/certs/key.pem --ssl-certfile=frontend/certs/cert.pem
-
+```
 Your FastAPI backend will now run with HTTPS enabled.
 ---
 
