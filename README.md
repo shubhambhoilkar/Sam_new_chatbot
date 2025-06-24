@@ -34,8 +34,8 @@ A speech-to-text (STT) and text-to-speech (TTS) powered chatbot using:
 
 ## *\*Prerequisites\**
 
-* Python 3.10+
-* Node.js (LTS recommended)
+* Python 3.12
+* react.js (LTS recommended)
 * `pip` (Python package installer)
 
 ---
@@ -144,8 +144,6 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 For any queries or collaboration:
 
 * *\*Developer:\**\* Sam
-* *\*Email:\**\* *\[your email here]*
+* *\*Email:\**\* *\shubhambhoilkar@gmail.com*
 
 ---
-
-> *\*Pro Tip:\**\* Add a demo video or screenshot in the README to make your GitHub page more attractive!
