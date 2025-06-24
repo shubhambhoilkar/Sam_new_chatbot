@@ -1,0 +1,22 @@
+services:
+  - type: web
+    name: chatbot-backend
+    env: python
+    region: oregon
+    plan: free
+    branch: main
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn main:app --host 0.0.0.0 --port 9900
+    workingDir: backend
+    envVars:
+      - key: PORT
+        value: 9900
+
+  - type: static
+    name: chatbot-frontend
+    buildCommand: npm install && npm run build
+    staticPublishPath: dist
+    workingDir: frontend
+    envVars:
+      - key: VITE_BACKEND_URL
+        value: https://chatbot-backend.onrender.com  # Use the backend's Render URL
