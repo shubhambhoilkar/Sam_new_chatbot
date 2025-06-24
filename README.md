@@ -22,9 +22,16 @@ A speech-to-text (STT) and text-to-speech (TTS) powered chatbot using:
 │   🔹 requirements.txt
 │   └── ...
 🔹 frontend
+|   🔹certs
+|   🔹node_modules
 │   🔹 src
-│   🔹 public
-│   └── ...
+      └──🔹app.jsx
+         🔹main.jsx
+         🔹index.css
+│   🔹 index.html
+│   🔹 package.json
+│   🔹 package-lock.json
+│   🔹 vite.config.js
 🔹 README.md
 ```
 
@@ -135,7 +142,7 @@ A speech-to-text (STT) and text-to-speech (TTS) powered chatbot using:
 ---
 ]
 
-#*🔧 SSL Certificate Generation Steps*
+# *\*🔧 SSL Certificate Generation Steps\**
 
 If you want to run your project using HTTPS locally, you can generate self-signed certificates using the following steps:
 
