@@ -1,5 +1,5 @@
-#Deepgram Speech To Text with chat history, github link: https://github.com/shubhambhoilkar/Deepgram-Chatbot/blob/main/deepgram_working_stt.py
 #working great, can be use for Demo 
+
 import os
 import io
 import time
@@ -9,9 +9,7 @@ import uvicorn
 import pygame
 import base64
 from gtts import gTTS
-#from playsound import playsound 
 import requests
-#import React, {useState, useEffect, useRef} from 'react';
 from fastapi import FastAPI, WebSocket
 from fastapi.middleware.cors import CORSMiddleware
 from dotenv import load_dotenv
@@ -230,5 +228,4 @@ async def text_to_speech(text):
         return ""
 
 if __name__ == "__main__":
-    #asyncio.run(get_transcript())
     uvicorn.run("main:app", host = "0.0.0.0", port = 9900, reload = True)
