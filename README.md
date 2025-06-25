@@ -1,4 +1,5 @@
 # Sam_new_chatbot
+*Complete working condition Sam_chatbot*
 Updated version. capable to hear and generate voice and text during chat.
 
 🚀 Sam Chatbot (STT-TTS) with FastAPI Backend & React Frontend
